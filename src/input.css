@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@layer components {
+  button.hamburger-menu {
+    @apply space-y-1 mr-4;
+  }
+  button.hamburger-menu > div {
+    @apply w-6 rounded-[0.0625rem] h-[3px] bg-white;
+  }
+  button.hamburger-menu.active > :nth-child(1) {
+    @apply w-3 rotate-[45deg] rounded-l-none translate-y-1 translate-x-3.5;
+  }
+  /*   button.hamburger-menu.active > :nth-child(2) {
+    @apply hidden;
+  } */
+  button.hamburger-menu.active > :nth-child(3) {
+    @apply w-3 rotate-[-45deg] rounded-l-none -translate-y-1 translate-x-3.5;
+  }
+  /*  nav.active {
+    @apply !block; // i know how to do it as well. 
+    width: 11px;
+    transform: translate(13px, -3px) rotate(-45deg);
+    } */
+    nav.navigation{
+     @apply hidden -z-1 [.active]:!block px-4 pt-12 max-w-[144px] h-[239px] bg-emerald-700 rounded-sm absolute top-0 right-0;
+   }
+    nav.navigation ul > li{
+     @apply text-base font-bold;
+   }
+
+}
+
+/* @utility hamburger-menu {
+  @apply space-y-1;
+} */
+
+
+/* @utility hamburger-menu {
+    @apply after:w-full
+    before:w-full   
+  after:h-full
+  before:h-full 
+  after:content-['']  
+  before:content-['']  
+  after:bg-white
+  before:bg-white 
+  bg-white                           //IT IS TOO MUCH TO MANAGE IF YOU GO BY CONTENT PROPERTY IN TAILWIND THAT WHY THEY RECOMMEND IN DOCS THINGS ARE SIMPLER WHEN NOT USING CONTENT AS IT JUST GIVE THE ABILITY TO HAVE A ONLY FOR STYLING ELEMENT AFTER IT IS NOT SOM IMPORTANT. 
+  after:absolute
+  after:top-2
+  before:absolute
+  before:bottom-2
+  after:rounded-[1px]
+  before:rounded-[1px];
+} */
