@@ -10,7 +10,8 @@
 
 <body class="bg-black text-white px-4 pt-4">
     <header class="relative flex justify-between ">
-        <a href="./index.html"><img class="w-11 sm:w-14" src="../resource/shoe-company-logo.png" alt="The Shoe Company Logo">
+        <a class="shrink-0" href="./index.html"><img class="w-11 sm:w-14" src="../resource/shoe-company-logo.png"
+                alt="The Shoe Company Logo">
             <p class="text-[0.375rem] sm:text-[0.5rem] -translate-y-2.5 sm:-translate-y-3"><b>The Shoe Company</b></p>
         </a>
         <button class="hamburger-menu sm:hidden" aria-pressed="false" aria-label="main-menu" aria-expanded="false"
@@ -19,14 +20,14 @@
             <div></div>
             <div></div>
         </button>
-        <nav class="navigation sm:block sm:h-auto sm:max-w-none sm:p-0 sm:bg-transparent">
-            <ul class="space-y-1.5 sm:flex [&>li] sm:gap-9 ">
-                <li class="nav__option"><a href="#">How It Works?</a></li>
-                <li class="nav__option"><a href="#">Home</a></li>
-                <li class="nav__option"><a href="#">About</a></li>
-                <li class="nav__option"><a href="#">Testimonials</a></li>
-                <li class="nav__option"><a href="#">Contact Us</a></li>
-            </ul>
+        <nav class="navigation sm:block sm:static sm:h-auto sm:w-[640px] sm:max-w-[640px] sm:py-4 sm:pr-5 sm:pl-10 sm:bg-transparent">
+            <div class="sm:flex sm:items-center sm:justify-between sm:space-y-0 ">
+                <a class="nav__option sm:p-1" href="#">Home</a>
+                <a class="nav__option sm:p-1" href="#">How It Works?</a>
+                <a class="nav__option sm:p-1" href="#">Testimonials</a>
+                <a class="nav__option sm:p-1" href="#">About</a>
+                <a class="nav__option sm:p-1" href="#">Contact Us</a>
+            </div>
         </nav>
     </header>
 </body>
