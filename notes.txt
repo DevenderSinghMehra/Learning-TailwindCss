@@ -1,0 +1,1 @@
+1. make nav bar stylish later, make the background like glass, and make the nav bar in to pill when scroll down and fixed it with animation on top of the screen.
