@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+/* @layer base {
+  html{
+    @apply font-a
+  }
+} */
 @layer components {
   button.hamburger-menu {
     @apply space-y-1 mr-4;
@@ -32,14 +37,29 @@
     @apply text-base font-bold px-4 py-0.5 inline-block;
   }
 
-  .hero-section__bg-img {
-    @apply h-full bg-[url(./resource/background-image-hero-section.png)] bg-cover opacity-50;
+  .hero-section__bg-img-1 {
+    @apply h-full bg-[url(./resource/background-image-1-hero-section.png)] bg-cover opacity-50;
+  }
+
+  .hero-section__bg-img-1__title {
+    @apply text-[clamp(36px,7vw,104px)]/[clamp(2.75rem,8vw,7.5rem)] font-bold max-w-0 absolute z-10 top-[24%] left-[6%];
+  }
+
+  .hero-section__bg-img-2 {
+    @apply h-full bg-[url(./resource/background-image-2-hero-section.png)] bg-cover opacity-50;
   }
 }
 
-/* @utility hamburger-menu {
-  @apply space-y-1;
-} */
+@utility text-tittle {
+  @apply text-[clamp(24px,6vw,48px)]/[clamp(2rem,7vw,4rem)] w-[min(100%,48rem)] font-bold;
+}
+
+@utility text-sub-tittle {
+  @apply text-[clamp(18px,5vw,36px)] font-bold;
+}
+@utility text-sentence {
+  @apply text-[clamp(14px,4vw,24px)] font-normal;
+}
 
 /* @utility hamburger-menu {
     @apply after:w-full
