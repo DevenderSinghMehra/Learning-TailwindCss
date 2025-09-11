@@ -36,10 +36,11 @@
     </header>
     <main class="max-w-[1440px] m-auto ">
         <header class="h-[88vh] min-h-111 sm:max-h-[658px] sm:flex">
+            <!--set different max-height for mobile device and desktop.-->
+            <!--fix this h-with vh it is not good and quite unpredictable, but it will required a lot of tweaking so i am leaving it for now.-->
             <div class="h-2/5 sm:w-1/2 sm:h-auto relative">
                 <div class="hero-section__bg-img-1 sm:hidden"></div>
                 <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
-                <!-- font-size: ; //add this as the font size. -->
             </div>
             <div class="h-3/5 sm:w-1/2 sm:h-auto relative">
                 <div class="hero-section__bg-img-2"></div>
@@ -47,30 +48,37 @@
                 <img class="max-w-3/4 absolute z-10 -top-9 left-[13%] sm:top-auto sm:bottom-[10%] sm:-left-[19%]"
                     src="./resource/the-white-shoe-hero-image.png" alt="The White Shoe From Website Main Section">
             </div>
+            <!-- give header a new max height it is not looking good on tablet. -->
         </header>
-        <section class="py-8">
-            <h1 class="text-tittle text-center m-auto">Have they finally made the perfect workout shoe?</h1>
-<div class="relative">
-    <img src="./resource/how-it-works-image.png" alt="Shoe image explaining how it works">
-    <div>
-        <div class="relative w-[clamp(173px,56vw,323px)]">
-            <h2 class="text-sub-tittle mb-1">THE HEEL</h2>
-            <p class="text-sentence">The heel is well-built, has appropriate elevation and is not too rigid.</p>
-        </div>
-    </div>
-    <div>
-        <div class="relative w-[clamp(173px,56vw,323px)] ">
-            <h2 class="text-sub-tittle mb-1">THE FRONT</h2>
-            <p class="text-sentence">The front is comfortable and adjusts well to the shape of your foot.</p>
-        </div>
-    </div>
-    <div>
-        <div class="relative w-[clamp(173px,56vw,323px)] ">
-            <h2 class="text-sub-tittle mb-1">TRACTION</h2>
-            <p class="text-sentence">The shoe has good traction and doesn't slip easily.</p>
-        </div>
-    </div>
-</div>
+        <section class="py-8 px-3 h-screen min-h-111 sm:h-[820px] bg-[#222222]">
+            <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">Have they finally made the perfect workout shoe?</h1>
+            <div class="relative flex h-[92%] items-center">
+                <!-- <div class=""> -->
+                    <img class="rotate-6 mx-auto w-[min(75%,670px)]" src="./resource/how-it-works-image.png"
+                        alt="Shoe image explaining how it works">
+                    <div class="absolute top-[6%] sm:left-[2%] sm:-top-[10%]">
+                        <!-- give this container a custom media query from 384px to sm. -->
+                        <div class="relative w-[clamp(173px,56vw,323px)]">
+                            <h2 class="text-sub-tittle mb-1">THE HEEL</h2>
+                            <p class="text-sentence">The heel is well-built, has appropriate elevation and is not too rigid.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute hidden">
+                        <div class="relative w-[clamp(173px,56vw,323px)] ">
+                            <h2 class="text-sub-tittle mb-1">THE FRONT</h2>
+                            <p class="text-sentence">The front is comfortable and adjusts well to the shape of your foot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute hidden">
+                        <div class="relative w-[clamp(173px,56vw,323px)] ">
+                            <h2 class="text-sub-tittle mb-1">TRACTION</h2>
+                            <p class="text-sentence">The shoe has good traction and doesn't slip easily.</p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
         </section>
     </main>
 </body>

@@ -55,7 +55,7 @@
 }
 
 @utility text-sub-tittle {
-  @apply text-[clamp(18px,5vw,36px)] font-bold;
+  @apply text-[clamp(18px,6vw,36px)] font-bold;
 }
 @utility text-sentence {
   @apply text-[clamp(14px,4vw,24px)] font-normal;
