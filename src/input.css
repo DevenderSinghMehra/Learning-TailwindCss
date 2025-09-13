@@ -1,10 +1,17 @@
 @import 'tailwindcss';
+/* i don't need to add source('./src')//because in vite.config.js i have already stated src as the root folder, and it also se the same root folder for tailwind.*/
 
 /* @layer base {
   html{
     @apply font-a
   }
 } */
+
+@theme {
+  --breakpoint-vsm: 24rem;
+  --breakpoint-bmd: 51.5rem;
+}
+
 @layer components {
   button.hamburger-menu {
     @apply space-y-1 mr-4;
@@ -38,11 +45,11 @@
   }
 
   .hero-section__bg-img-1 {
-    @apply h-full bg-[url(./resource/background-image-1-hero-section.png)] bg-cover opacity-50;
+    @apply h-full bg-[url(./resource/background-image-1-hero-section.png)] bg-cover opacity-50 absolute -z-1 inset-0;
   }
 
   .hero-section__bg-img-1__title {
-    @apply text-[clamp(36px,7vw,104px)]/[clamp(2.75rem,8vw,7.5rem)] font-bold max-w-0 absolute z-10 top-[24%] left-[6%];
+    @apply text-[max(24px,6vw)]/[max(1.75rem,6vw)] sm:text-[min(7vw,96px)]/[min(7vw,6rem)] font-bold max-w-0 ml-[15%] sm:mt-[15%] ;
   }
 
   .hero-section__bg-img-2 {
