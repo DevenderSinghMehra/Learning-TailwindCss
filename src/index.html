@@ -1,96 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./app.js" type="module"></script>
     <title>The Show Company</title>
-</head>
+  </head>
 
-<body class="bg-black text-white">
-    <header class=" absolute top-0 left-0 right-0 z-50">
-        <div class="relative flex justify-between p-4 max-w-[1440px] m-auto">
-            <a class="shrink-0" href="./index.html"><img class="w-11 sm:w-14" src="../resource/shoe-company-logo.png "
-                    alt="The Shoe Company Logo">
-                <p class="text-[0.375rem] sm:text-[0.5rem] -translate-y-2.5 sm:-translate-y-3"><b>The Shoe Company</b>
-                </p>
-            </a>
-            <button class="hamburger-menu sm:hidden" aria-pressed="false" aria-label="main-menu" aria-expanded="false"
-                aria-controls="main-nav">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <nav
-                class="navigation sm:block sm:static sm:z-10 sm:h-auto sm:w-[640px] sm:max-w-[640px] sm:py-4 sm:pr-5 sm:pl-10 sm:bg-transparent">
-                <div class="sm:flex sm:items-center sm:justify-between sm:space-y-0 ">
-                    <a class="nav__option sm:p-1" href="#">Home</a>
-                    <a class="nav__option sm:p-1" href="#">How It Works?</a>
-                    <a class="nav__option sm:p-1" href="#">Testimonials</a>
-                    <a class="nav__option sm:p-1" href="#">About</a>
-                    <a class="nav__option sm:p-1" href="#">Contact Us</a>
-                </div>
-            </nav>
-        </div>
+  <body class="bg-black text-white">
+    <header class="absolute top-0 left-0 right-0 z-50">
+      <div class="relative flex justify-between p-4 max-w-[1440px] m-auto">
+        <a class="shrink-0" href="./index.html"
+          ><img
+            class="w-11 sm:w-14"
+            src="../resource/shoe-company-logo.png "
+            alt="The Shoe Company Logo"
+          />
+          <p
+            class="text-[0.375rem] sm:text-[0.5rem] -translate-y-2.5 sm:-translate-y-3"
+          >
+            <b>The Shoe Company</b>
+          </p>
+        </a>
+        <button
+          class="hamburger-menu sm:hidden"
+          aria-pressed="false"
+          aria-label="main-menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <nav
+          class="navigation sm:block sm:static sm:z-10 sm:h-auto sm:w-[640px] sm:max-w-[640px] sm:py-4 sm:pr-5 sm:pl-10 sm:bg-transparent"
+        >
+          <div class="sm:flex sm:items-center sm:justify-between sm:space-y-0">
+            <a class="nav__option sm:p-1" href="#">Home</a>
+            <a class="nav__option sm:p-1" href="#">How It Works?</a>
+            <a class="nav__option sm:p-1" href="#">Testimonials</a>
+            <a class="nav__option sm:p-1" href="#">About</a>
+            <a class="nav__option sm:p-1" href="#">Contact Us</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="max-w-[1440px] m-auto ">
-        <header class="h-[clamp(536px,100svh,700px)]  sm:max-h-[560px] bmd:max-h-none sm:flex">
-            <!--set different max-height for mobile device and desktop.-->
-            <!--fix this h-with vh it is not good and quite unpredictable, but it will required a lot of tweaking so i am leaving it for now.-->
-            <div class="h-2/5 sm:w-1/2 sm:h-auto relative flex items-center">
-                <div class="hero-section__bg-img-1 sm:hidden"></div>
-                <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
-            </div>
-            <div class="h-3/5 sm:w-1/2 sm:h-auto relative">
-                <div class="hero-section__bg-img-2"></div>
-                <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
-                <img class=" w-[min(80%,424px)] absolute z-10 left-[10%] -top-[22%] vsm:-top-[33.5%] sm:w-[72%] sm:top-auto sm:bottom-[10%] sm:-left-[16.5%]"
-                    src="./resource/the-white-shoe-hero-image.png" alt="The White Shoe From Website Main Section">
-            </div>
-            <!-- give header a new max height it is not looking good on tablet. -->
-        </header>
-        <section class="py-8 px-3 h-[max(620px,100svh)] sm:h-auto bg-[#222222]">
-            <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">Have they finally made the perfect workout shoe?
-            </h1>
-            <div class="relative flex h-[92%] items-center">
-                <!-- <div class=""> -->
-                <img class="rotate-6 mx-auto w-[min(75%,670px)]" src="./resource/how-it-works-image.png"
-                    alt="Shoe image explaining how it works">
-                <div class="absolute top-[6%] min-[564px]:top-[3%] sm:-top-24 sm:left-[2%] ">
-                    <!-- give this container a custom media query from 384px to sm. -->
-                    <div class="relative w-[clamp(173px,56vw,323px)]">
-                        <h3 class="text-sub-tittle mb-1">THE HEEL</h3>
-                        <p class="text-sentence">The heel is well-built, has appropriate elevation and is not too rigid.
-                        </p>
-                    </div>
-                </div>
-                <div class="absolute hidden">
-                    <div class="relative w-[clamp(173px,56vw,323px)] ">
-                        <h3 class="text-sub-tittle mb-1">THE FRONT</h3>
-                        <p class="text-sentence">The front is comfortable and adjusts well to the shape of your foot.
-                        </p>
-                    </div>
-                </div>
-                <div class="absolute hidden">
-                    <div class="relative w-[clamp(173px,56vw,323px)] ">
-                        <h3 class="text-sub-tittle mb-1">TRACTION</h3>
-                        <p class="text-sentence">The shoe has good traction and doesn't slip easily.</p>
-                    </div>
-                </div>
-                <!-- </div> -->
-            </div>
-        </section>
-        <section>
-            <div class="w-[60%]"><img src="" alt=""></div>
-            <div class="w-[40%]">
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+    <main class="max-w-[1440px] m-auto">
+      <header
+        class="h-[clamp(536px,100svh,700px)] sm:max-h-[560px] bmd:max-h-none sm:flex"
+      >
+        <!--set different max-height for mobile device and desktop.-->
+        <!--fix this h-with vh it is not good and quite unpredictable, but it will required a lot of tweaking so i am leaving it for now.-->
+        <div class="h-2/5 sm:w-1/2 sm:h-auto relative flex items-center">
+          <div
+            class="bg-img-opacity-1/2 hero-section__bg-img-1 sm:hidden"
+          ></div>
+          <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
+        </div>
+        <div class="h-3/5 relative sm:w-1/2 sm:h-auto sm:flex sm:items-center">
+          <div class="bg-img-opacity-1/2 hero-section__bg-img-2"></div>
+          <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
+          <img
+            class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:m-0 sm:translate-y-0 sm:-translate-x-[24.5%] sm:w-[max(70%,450px)] sm:mt-24"
+            src="./resource/the-white-shoe-hero-image.png"
+            alt="The White Shoe From Website Main Section"
+          />
+        </div>
+      </header>
+      <section class="py-8 px-3 h-[max(620px,100svh)] sm:h-auto bg-[#222222]">
+        <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">
+          Have They Finally Made The Perfect Workout Shoe?
+        </h1>
+        <div class="relative h-[92%]">
+          <div class="flex justify-between gap-x-[max(2rem,9vw)] mb-[25%]">
+              <div class="relative w-[clamp(173px,56vw,323px)]">
+                <h3 class="text-sub-tittle ">THE HEEL</h3>
+                <p class="text-sentence">
+                  The heel is well-built, has appropriate elevation and is not
+                  too rigid.
+                </p>
+                <img src="./resource/arrow-1.png" aria-hidden="true">
+                <!-- i dont think with translate it will be possible use position absolute. -->
+              </div>
 
+              <div class="relative w-[clamp(173px,56vw,323px)] translate-y-[2.5rem]">
+                <h3 class="text-sub-tittle">THE FRONT</h3>
+                <p class="text-sentence">
+                  The front is comfortable and adjusts well to the shape of your
+                  foot.
+                </p>
+              </div>
+          </div>
+          <img
+            class="rotate-6 mx-auto w-[min(75%,670px)]"
+            src="./resource/how-it-works-image.png"
+            alt="Shoe image explaining how it works"
+          />
+          <div class="absolute hidden">
+            <div class="relative w-[clamp(173px,56vw,323px)]">
+              <h3 class="text-sub-tittle mb-1">TRACTION</h3>
+              <p class="text-sentence">
+                The shoe has good traction and doesn't slip easily.
+              </p>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section>
+        <div class="w-[60%]"><img src="" alt="" /></div>
+        <div class="w-[40%]">
+          <div>
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

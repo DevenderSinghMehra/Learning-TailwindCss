@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 /* i don't need to add source('./src')//because in vite.config.js i have already stated src as the root folder, and it also se the same root folder for tailwind.*/
 
 /* @layer base {
@@ -16,26 +16,31 @@
   button.hamburger-menu {
     @apply space-y-1 mr-4;
   }
+
   button.hamburger-menu > div {
     @apply w-6 rounded-[0.0625rem] h-[3px] bg-white;
   }
+
   button.hamburger-menu.active > :nth-child(1) {
     @apply w-3 rotate-[45deg] rounded-l-none translate-y-1 translate-x-3.5;
   }
+
   /*   button.hamburger-menu.active > :nth-child(2) {
     @apply hidden;
   } */
   button.hamburger-menu.active > :nth-child(3) {
     @apply w-3 rotate-[-45deg] rounded-l-none -translate-y-1 translate-x-3.5;
   }
+
   /*  nav.active {
     @apply !block; // i know how to do it as well. 
     width: 11px;
     transform: translate(13px, -3px) rotate(-45deg);
     } */
   nav.navigation {
-    @apply hidden -z-1 [.active]:!block  pt-12 max-w-[144px] h-[239px] bg-emerald-700 rounded-sm absolute top-4  right-4;
+    @apply hidden -z-1 [.active]:!block pt-12 max-w-[144px] h-[239px] bg-emerald-700 rounded-sm absolute top-4 right-4;
   }
+
   nav.navigation div {
     @apply space-y-1.5;
   }
@@ -45,15 +50,15 @@
   }
 
   .hero-section__bg-img-1 {
-    @apply h-full bg-[url(./resource/background-image-1-hero-section.png)] bg-cover opacity-50 absolute -z-1 inset-0;
+    @apply bg-[url(./resource/background-image-1-hero-section.png)];
   }
 
   .hero-section__bg-img-1__title {
-    @apply text-[max(24px,6vw)]/[max(1.75rem,6vw)] sm:text-[min(7vw,96px)]/[min(7vw,6rem)] font-bold max-w-0 ml-[15%] sm:mt-[15%] ;
+    @apply text-[max(32px,6vw)]/[max(1.9rem,6vw)] sm:text-[min(7vw,96px)]/[min(7vw,6rem)] font-bold max-w-0 ml-[15%] sm:mt-[15%];
   }
 
   .hero-section__bg-img-2 {
-    @apply h-full bg-[url(./resource/background-image-2-hero-section.png)] bg-cover opacity-50;
+    @apply bg-[url(./resource/background-image-2-hero-section.png)];
   }
 }
 
@@ -62,11 +67,19 @@
 }
 
 @utility text-sub-tittle {
-  @apply text-[clamp(18px,6vw,36px)] font-bold;
+  @apply text-[clamp(18px,4.5vw,36px)] font-bold mb-1 sm:mb-2;
 }
+
 @utility text-sentence {
-  @apply text-[clamp(14px,4vw,24px)] font-normal;
+  @apply text-[clamp(14px,3.5vw,24px)]/[clamp(1rem,4.5vw,1.8rem)] font-normal;
 }
+
+@utility bg-img-opacity-1/2 {
+  @apply h-full bg-cover opacity-50 absolute -z-1 inset-0;
+}
+/* @utility postioned-img {
+  @apply h-full absolute z-10 inset-0;
+} */
 
 /* @utility hamburger-menu {
     @apply after:w-full
