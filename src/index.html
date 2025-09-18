@@ -50,8 +50,6 @@
       <header
         class="h-[clamp(536px,100svh,700px)] sm:max-h-[560px] bmd:max-h-none sm:flex"
       >
-        <!--set different max-height for mobile device and desktop.-->
-        <!--fix this h-with vh it is not good and quite unpredictable, but it will required a lot of tweaking so i am leaving it for now.-->
         <div class="h-2/5 sm:w-1/2 sm:h-auto relative flex items-center">
           <div
             class="bg-img-opacity-1/2 hero-section__bg-img-1 sm:hidden"
@@ -68,44 +66,61 @@
           />
         </div>
       </header>
-      <section class="py-8 px-3 h-[max(620px,100svh)] sm:h-auto bg-[#222222]">
+      <section class="py-8 px-3 bg-[#222222] lg:relative">
+        <!-- instead of just background black give it black blue linear gradient and make it look fantastic as well. -->
         <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">
           Have They Finally Made The Perfect Workout Shoe?
         </h1>
-        <div class="relative h-[92%]">
-          <div class="flex justify-between gap-x-[max(2rem,9vw)] mb-[25%]">
-              <div class="relative w-[clamp(173px,56vw,323px)]">
-                <h3 class="text-sub-tittle ">THE HEEL</h3>
-                <p class="text-sentence">
-                  The heel is well-built, has appropriate elevation and is not
-                  too rigid.
-                </p>
-                <img src="./resource/arrow-1.png" aria-hidden="true">
-                <!-- i dont think with translate it will be possible use position absolute. -->
-              </div>
-
-              <div class="relative w-[clamp(173px,56vw,323px)] translate-y-[2.5rem]">
-                <h3 class="text-sub-tittle">THE FRONT</h3>
-                <p class="text-sentence">
-                  The front is comfortable and adjusts well to the shape of your
-                  foot.
-                </p>
-              </div>
+        <div class="lg:relative">
+          <div
+            class="flex justify-between gap-x-[max(2rem,9vw)] mb-[5%] md:mb-0 w-[92%] mx-auto lg:absolute lg:top-0 lg:left-[5%]"
+          >
+            <div class="relative w-[clamp(173px,56vw,323px)]">
+              <h3 class="text-sub-tittle">THE HEEL</h3>
+              <p class="text-sentence">
+                The heel is well-built, has appropriate elevation and is not too
+                rigid.
+              </p>
+              <img
+                class="absolute w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%]"
+                src="./resource/arrow-1.png"
+                aria-hidden="true"
+              />
+            </div>
+            <div
+              class="relative w-[clamp(173px,56vw,323px)] mt-[2.5rem] lg:mt-[8.125rem] xl:mr-[5%]"
+            >
+              <h3 class="text-sub-tittle">THE FRONT</h3>
+              <p class="text-sentence">
+                The front is comfortable and adjusts well to the shape of your
+                foot.
+              </p>
+              <img
+                class="absolute w-3/5 rotate-[30deg] mt-[4%] lg:-rotate-90 lg:mt-0 lg:bottom-[10%] lg:-left-[58%]"
+                src="./resource/arrow-2.png"
+                aria-hidden="true"
+              />
+            </div>
           </div>
           <img
-            class="rotate-6 mx-auto w-[min(75%,670px)]"
+            class="rotate-6 mx-auto w-[min(75%,670px)] xl:w-[min(75%,855px)] lg:rotate-0"
             src="./resource/how-it-works-image.png"
             alt="Shoe image explaining how it works"
           />
-          <div class="absolute hidden">
-            <div class="relative w-[clamp(173px,56vw,323px)]">
-              <h3 class="text-sub-tittle mb-1">TRACTION</h3>
-              <p class="text-sentence">
-                The shoe has good traction and doesn't slip easily.
-              </p>
-            </div>
+          <div
+            class="relative w-[clamp(173px,56vw,323px)] max-w-full ml-[8%] mt-[5%] md:mt-0 lg:absolute lg:bottom-[13%] lg:ml-[12%]"
+          >
+            <img
+              class="w-[45%] absolute -top-full left-[35%] lg:w-[60%] lg:-top-[60%] lg:left-[70%]"
+              src="./resource/arrow-3.png"
+              aria-hidden="true"
+            />
+            <!-- see i could have tweaked the img alot to make it crystal perfect but what is the point, i don't think there are devices below 230px[anyway i will do a littl research on that as well.] -->
+            <h3 class="text-sub-tittle mb-1">TRACTION</h3>
+            <p class="text-sentence">
+              The shoe has good traction and doesn't slip easily.
+            </p>
           </div>
-          <!-- </div> -->
         </div>
       </section>
       <section>
