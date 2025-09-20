@@ -1,0 +1,22 @@
+For the 2 section with the main of the design.
+----------------------------------------------
+2 APPROACHES :-[mostly i am trying to do all the styling on the boxes, not on the image as it is inevitable to not touch the boxes, if i want the simple and best solutions]
+1) use position property there are 4 childs (it is just for me so i will be using way to abbreviation) as i will not style img, i will put absolute on 2nd child and put margin bottom more on child 1 to make up for the lost space and align the 1, 2 children well with image & for the 3rd child will use absolute and give image margin-bottom to make up for the lost space, and align the 3rd well. 
+here what i will cost me is:absolute(child 2), mb(child 1), absolute(ch-3), mb(img).
+--
+now, if i have gone for image instead of boxes then i would have to give contrainer a hight or just put mb(tailwind naming convention) on child 2 i think that also would work fine but then the challenge will be align image center because it has to be in center i can have a setup where it is under a div and i will put absolute on the div and image will anyway going to have m-auto working fine.
+in this case maybe i can pull it off, 
+but it cost an extra html element, flex, absolute, mb on child 2 [4 things in total but its not very hard to read.]
+
+
+
+2)using translate: the good thing about translate is that they are predicatable and easy to use.
+
+to do this i have to put translate on ch-2(child = ch) bring it down and reduce mb of ch-1 and put another translate on ch-3 but that i will not work as there will empty space at the bottom of the page,
+
+hmm so let me put translate of img but still even after aligning there will some empy space which is not good, so iam not using it, as it does not takes the element away from its place so the dimension of the element still takes the space as they would before. which left me with empty space and not good for now, 
+
+the reason i don't wanna use both translate and position is because of readabiliy issue. 
+
+
+FOR SIMLICITY SAKE I AM GOING WITH THE FIRST METHOD WRITTEN IN THE POSITION 1) METHOD PLACE.

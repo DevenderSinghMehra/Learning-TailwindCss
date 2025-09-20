@@ -17,13 +17,13 @@
             alt="The Shoe Company Logo"
           />
           <p
-            class="text-[0.375rem] sm:text-[0.5rem] -translate-y-2.5 sm:-translate-y-3"
+            class="text-[0.375rem] md:text-[0.5rem] -translate-y-2.5 md:-translate-y-3"
           >
             <b>The Shoe Company</b>
           </p>
         </a>
         <button
-          class="hamburger-menu sm:hidden"
+          class="hamburger-menu md:hidden"
           aria-pressed="false"
           aria-label="main-menu"
           aria-expanded="false"
@@ -34,33 +34,33 @@
           <div></div>
         </button>
         <nav
-          class="navigation sm:block sm:static sm:z-10 sm:h-auto sm:w-[640px] sm:max-w-[640px] sm:py-4 sm:pr-5 sm:pl-10 sm:bg-transparent"
+          class="navigation md:block md:static md:z-10 md:h-auto md:w-[640px] md:max-w-[640px] md:py-4 md:pr-5 md:pl-10 md:bg-transparent"
         >
-          <div class="sm:flex sm:items-center sm:justify-between sm:space-y-0">
-            <a class="nav__option sm:p-1" href="#">Home</a>
-            <a class="nav__option sm:p-1" href="#">How It Works?</a>
-            <a class="nav__option sm:p-1" href="#">Testimonials</a>
-            <a class="nav__option sm:p-1" href="#">About</a>
-            <a class="nav__option sm:p-1" href="#">Contact Us</a>
+          <div class="md:flex md:items-center md:justify-between md:space-y-0">
+            <a class="nav__option md:p-1" href="#">Home</a>
+            <a class="nav__option md:p-1" href="#">How It Works?</a>
+            <a class="nav__option md:p-1" href="#">Testimonials</a>
+            <a class="nav__option md:p-1" href="#">About</a>
+            <a class="nav__option md:p-1" href="#">Contact Us</a>
           </div>
         </nav>
       </div>
     </header>
     <main class="max-w-[1440px] m-auto">
       <header
-        class="h-[clamp(536px,100svh,700px)] sm:max-h-[560px] bmd:max-h-none sm:flex"
+        class="h-[clamp(536px,100svh,700px)] md:max-h-[560px] bmd:max-h-none md:flex"
       >
-        <div class="h-2/5 sm:w-1/2 sm:h-auto relative flex items-center">
+        <div class="h-2/5 md:w-1/2 md:h-auto relative flex items-center">
           <div
-            class="bg-img-opacity-1/2 hero-section__bg-img-1 sm:hidden"
+            class="bg-img-opacity-1/2 hero-section__bg-img-1 md:hidden"
           ></div>
           <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
         </div>
-        <div class="h-3/5 relative sm:w-1/2 sm:h-auto sm:flex sm:items-center">
+        <div class="h-3/5 relative md:w-1/2 md:h-auto md:flex md:items-center">
           <div class="bg-img-opacity-1/2 hero-section__bg-img-2"></div>
           <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
           <img
-            class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:m-0 sm:translate-y-0 sm:-translate-x-[24.5%] sm:w-[max(70%,450px)] sm:mt-24"
+            class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:ml-auto sm:mr-[4%] md:m-0 md:translate-y-0 md:-translate-x-[24.5%] md:w-[max(70%,450px)] md:mt-24"
             src="./resource/the-white-shoe-hero-image.png"
             alt="The White Shoe From Website Main Section"
           />
@@ -71,53 +71,47 @@
         <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">
           Have They Finally Made The Perfect Workout Shoe?
         </h1>
-        <div class="lg:relative">
-          <div
-            class="flex justify-between gap-x-[max(2rem,9vw)] mb-[5%] md:mb-0 w-[92%] mx-auto lg:absolute lg:top-0 lg:left-[5%]"
-          >
-            <div class="relative w-[clamp(173px,56vw,323px)]">
+        <div class="relative px-2.5">
+          <div class="flex justify-between gap-x-[max(2rem,9vw)] -mb-16">
+            <div class="w-[clamp(173px,56vw,323px)]">
               <h3 class="text-sub-tittle">THE HEEL</h3>
-              <p class="text-sentence">
+              <p class="text-sentence md-text-sentence">
                 The heel is well-built, has appropriate elevation and is not too
                 rigid.
               </p>
               <img
-                class="absolute w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%]"
+                class="w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%]"
                 src="./resource/arrow-1.png"
                 aria-hidden="true"
               />
             </div>
-            <div
-              class="relative w-[clamp(173px,56vw,323px)] mt-[2.5rem] lg:mt-[8.125rem] xl:mr-[5%]"
-            >
+            <div class="w-[clamp(173px,56vw,323px)] mt-[2.5rem]">
               <h3 class="text-sub-tittle">THE FRONT</h3>
-              <p class="text-sentence">
+              <p class="text-sentence md-text-sentence">
                 The front is comfortable and adjusts well to the shape of your
                 foot.
               </p>
               <img
-                class="absolute w-3/5 rotate-[30deg] mt-[4%] lg:-rotate-90 lg:mt-0 lg:bottom-[10%] lg:-left-[58%]"
+                class="w-3/5 rotate-[126deg] mt-[4%] lg:rotate-0 lg:mt-0 lg:translate-x-[121%] lg:translate-y-[108%]"
                 src="./resource/arrow-2.png"
                 aria-hidden="true"
               />
             </div>
           </div>
           <img
-            class="rotate-6 mx-auto w-[min(75%,670px)] xl:w-[min(75%,855px)] lg:rotate-0"
+            class="rotate-6 mx-auto w-[80%] lg:w-[min(75%,580px)]"
             src="./resource/how-it-works-image.png"
             alt="Shoe image explaining how it works"
           />
-          <div
-            class="relative w-[clamp(173px,56vw,323px)] max-w-full ml-[8%] mt-[5%] md:mt-0 lg:absolute lg:bottom-[13%] lg:ml-[12%]"
-          >
+          <div class="w-[clamp(173px,56vw,323px)] max-w-full -mt-12">
             <img
-              class="w-[45%] absolute -top-full left-[35%] lg:w-[60%] lg:-top-[60%] lg:left-[70%]"
+              class="w-3/5 ml-auto -mb-6"
               src="./resource/arrow-3.png"
               aria-hidden="true"
             />
             <!-- see i could have tweaked the img alot to make it crystal perfect but what is the point, i don't think there are devices below 230px[anyway i will do a littl research on that as well.] -->
             <h3 class="text-sub-tittle mb-1">TRACTION</h3>
-            <p class="text-sentence">
+            <p class="text-sentence md-text-sentence">
               The shoe has good traction and doesn't slip easily.
             </p>
           </div>
