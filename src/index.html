@@ -66,46 +66,52 @@
           />
         </div>
       </header>
-      <section class="py-8 px-3 bg-[#222222] lg:relative">
+      <section class="py-8 px-3 bg-[#222222] md:bg-black">
         <!-- instead of just background black give it black blue linear gradient and make it look fantastic as well. -->
-        <h1 class="text-tittle text-center m-auto mb-10 sm:mb-24">
+        <!-- when done making the original design make yours and make this section as 100svh so it hits right on the face. -->
+        <h1 class="text-tittle text-center m-auto mb-10 xl:mb-24">
           Have They Finally Made The Perfect Workout Shoe?
         </h1>
-        <div class="relative px-2.5">
-          <div class="flex justify-between gap-x-[max(2rem,9vw)] -mb-16">
-            <div class="w-[clamp(173px,56vw,323px)]">
+        <div class="sm:max-w-150 sm:mx-auto md:max-w-none md:m-0">
+          <div
+            class="flex justify-between gap-x-[max(2rem,9vw)] -mb-14 sm:-mb-14 md:-mb-[20%] lg:-mb-[28%] xl:mx-auto xl:max-w-[92%]"
+          >
+            <div class="w-[clamp(173px,56vw,323px)] ml-[4%] lg:ml-[2%]">
               <h3 class="text-sub-tittle">THE HEEL</h3>
               <p class="text-sentence md-text-sentence">
                 The heel is well-built, has appropriate elevation and is not too
                 rigid.
               </p>
               <img
-                class="w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%]"
+                class="w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%] bxl:ml-[22%]"
                 src="./resource/arrow-1.png"
                 aria-hidden="true"
               />
             </div>
-            <div class="w-[clamp(173px,56vw,323px)] mt-[2.5rem]">
+            <div class="w-[clamp(173px,56vw,323px)] mt-[10%] bxl:mr-[4%]">
               <h3 class="text-sub-tittle">THE FRONT</h3>
               <p class="text-sentence md-text-sentence">
                 The front is comfortable and adjusts well to the shape of your
                 foot.
               </p>
               <img
-                class="w-3/5 rotate-[126deg] mt-[4%] lg:rotate-0 lg:mt-0 lg:translate-x-[121%] lg:translate-y-[108%]"
+                class="w-3/5 rotate-[126deg] mt-[4%] lg:mt-0 lg:-translate-x-[98%] lg:-translate-y-[104%] lg:-rotate-[26.2deg] xl:rotate-0"
                 src="./resource/arrow-2.png"
                 aria-hidden="true"
               />
             </div>
           </div>
           <img
-            class="rotate-6 mx-auto w-[80%] lg:w-[min(75%,580px)]"
+            class="rotate-6 mx-auto w-[80%] md:max-w-500px lg:w-1/2 lg:rotate-0 bxl:w-200"
             src="./resource/how-it-works-image.png"
             alt="Shoe image explaining how it works"
           />
-          <div class="w-[clamp(173px,56vw,323px)] max-w-full -mt-12">
+          <!-- make sure to put hover here later!! -->
+          <div
+            class="w-[clamp(173px,56vw,323px)] max-w-full -mt-[20%] ml-[10%] md:ml-[16%] lg:-mt-[10%] xl:-mt-[18%]"
+          >
             <img
-              class="w-3/5 ml-auto -mb-6"
+              class="w-1/2 ml-[30%] -mb-6 lg:w-[66%] lg:ml-[64%] lg:-mb-[35%]"
               src="./resource/arrow-3.png"
               aria-hidden="true"
             />
@@ -117,13 +123,30 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="w-[60%]"><img src="" alt="" /></div>
-        <div class="w-[40%]">
-          <div>
-            <h2></h2>
-            <p></p>
+      <section class="px-3 bg-[#222222] md:bg-black">
+          <div class="relative">
+            <div
+              class="bg-cover bg-[url(./resource/about-us-background.png)] h-4/5 absolute inset-0 -z-10"> 
+              <!-- start from here.  -->
+            </div>
+            <img
+              src="./resource/about-us-shoe-company.png"
+              alt="Male Model Wearing The Shoe Made By The Shoe Company"
+            class=""/>
           </div>
+        <div class="">
+          <h2>About Us!</h2>
+          <p class="text-sentence">
+            For each one of those shoe sweethearts out there,
+            <b>THE SHOE COMPANY</b>
+            offer the one-stop goal to pick the correct match of footwear.
+          </p>
+
+          <p class="text-sentence">
+            At <b>THE SHOE COMPANY</b>, you can locate a vast accumulation of
+            dashing footwear in all sizes and styles, all inside a couple of
+            snaps.
+          </p>
         </div>
       </section>
     </main>

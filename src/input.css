@@ -10,6 +10,7 @@
 @theme {
   --breakpoint-vsm: 24rem;
   --breakpoint-bmd: 51.5rem;
+  --breakpoint-bxl: 86.25rem;
 }
 
 @layer components {
@@ -52,14 +53,17 @@
   .hero-section__bg-img-1 {
     @apply bg-[url(./resource/background-image-1-hero-section.png)];
   }
-
+  
   .hero-section__bg-img-1__title {
     @apply text-[max(32px,6vw)]/[max(1.9rem,6vw)] sm:text-[min(7vw,96px)]/[min(7vw,6rem)] font-bold max-w-0 ml-[15%] sm:mt-[15%];
   }
-
+  
   .hero-section__bg-img-2 {
     @apply bg-[url(./resource/background-image-2-hero-section.png)];
   }
+ /*  .about-section__bg-img {
+    @apply ];
+  } */
 }
 
 @utility text-tittle {
@@ -74,12 +78,12 @@
   @apply text-[clamp(14px,3.5vw,24px)]/[clamp(1rem,4.5vw,1.8rem)] font-normal;
 }
 
+/* @utility bg-img {
+  @apply h-full bg-cover;
+} */
 @utility bg-img-opacity-1/2 {
   @apply h-full bg-cover opacity-50 absolute -z-1 inset-0;
 }
-/* @utility postioned-img {
-  @apply h-full absolute z-10 inset-0;
-} */
 
 /* @utility hamburger-menu {
     @apply after:w-full
