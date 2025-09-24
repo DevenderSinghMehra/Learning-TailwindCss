@@ -8,7 +8,7 @@
 } */
 
 @theme {
-  --breakpoint-vsm: 24rem;
+  --breakpoint-vsm: 36.25rem;
   --breakpoint-bmd: 51.5rem;
   --breakpoint-blg: 72.625rem;
   --breakpoint-bxl: 86.25rem;
@@ -79,7 +79,7 @@
   @apply text-[clamp(14px,3.5vw,24px)]/[clamp(1rem,4.5vw,1.8rem)] font-normal;
 }
 @utility text-sentence-paragraph {
-  @apply text-[clamp(16px,3.65vw,20px)]/[clamp(0.95rem,4.75vw,1.65rem)] font-medium;
+  @apply text-[clamp(16px,3.65vw,20px)] px-[4%] font-medium;
 }
 
 /* @utility bg-img {
