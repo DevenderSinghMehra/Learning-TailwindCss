@@ -1,171 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" type="module"></script>
+    <title>The Show Company</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./app.js" type="module"></script>
-  <title>The Show Company</title>
-</head>
-
-<body class="bg-black text-white">
-  <header class="absolute top-0 left-0 right-0 z-50">
-    <div class="relative flex justify-between p-4 max-w-[1440px] m-auto">
-      <a class="shrink-0" href="./index.html"><img class="w-11 sm:w-14" src="../resource/shoe-company-logo.png "
-          alt="The Shoe Company Logo" />
-        <p class="text-[0.375rem] md:text-[0.5rem] -translate-y-2.5 md:-translate-y-3">
-          <b>The Shoe Company</b>
-        </p>
-      </a>
-      <button class="hamburger-menu md:hidden" aria-pressed="false" aria-label="main-menu" aria-expanded="false"
-        aria-controls="main-nav">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-      <nav
-        class="navigation md:block md:static md:z-10 md:h-auto md:w-[640px] md:max-w-[640px] md:py-4 md:pr-5 md:pl-10 md:bg-transparent">
-        <div class="md:flex md:items-center md:justify-between md:space-y-0">
-          <a class="nav__option md:p-1" href="#">Home</a>
-          <a class="nav__option md:p-1" href="#">How It Works?</a>
-          <a class="nav__option md:p-1" href="#">Testimonials</a>
-          <a class="nav__option md:p-1" href="#">About</a>
-          <a class="nav__option md:p-1" href="#">Contact Us</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main class="max-w-[1440px] m-auto">
-    <header class="h-[clamp(536px,100svh,700px)] md:max-h-[560px] bmd:max-h-none md:flex">
-      <div class="h-2/5 md:w-1/2 md:h-auto relative flex items-center">
-        <div class="bg-img-opacity-1/2 hero-section__bg-img-1 md:hidden"></div>
-        <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
-      </div>
-      <div class="h-3/5 relative md:w-1/2 md:h-auto md:flex md:items-center">
-        <div class="bg-img-opacity-1/2 hero-section__bg-img-2"></div>
-        <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
-        <img
-          class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:ml-auto sm:mr-[4%] md:m-0 md:translate-y-0 md:-translate-x-[24.5%] md:w-[max(70%,450px)] md:mt-24"
-          src="./resource/the-white-shoe-hero-image.png" alt="The White Shoe From Website Main Section" />
+  <body class="bg-black text-white">
+    <header class="absolute top-0 left-0 right-0 z-50" >
+      <div class="relative flex justify-between p-4 max-w-[1440px] m-auto">
+        <a class="shrink-0" href="./index.html"
+          ><img
+            class="w-11 sm:w-14"
+            src="../resource/shoe-company-logo.png "
+            alt="The Shoe Company Logo"
+          />
+          <p
+            class="text-[0.375rem] md:text-[0.5rem] -translate-y-2.5 md:-translate-y-3"
+          >
+            <b>The Shoe Company</b>
+          </p>
+        </a>
+        <button
+          class="hamburger-menu md:hidden"
+          aria-pressed="false"
+          aria-label="main-menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <nav
+          class="navigation md:block md:static md:z-10 md:h-auto md:w-[640px] md:max-w-[640px] md:py-4 md:pr-5 md:pl-10 md:bg-transparent"
+        >
+          <div class="md:flex md:items-center md:justify-between md:space-y-0">
+            <a class="nav__option md:p-1" href="#home">Home</a>
+            <a class="nav__option md:p-1" href="#howItWorks">How It Works?</a>
+            <a class="nav__option md:p-1" href="#testimonials">Testimonials</a>
+            <a class="nav__option md:p-1" href="#aboutUs">About Us</a>
+            <a class="nav__option md:p-1" href="#contactUs">Contact Us</a>
+          </div>
+        </nav>
       </div>
     </header>
-    <section class="py-8 px-3 bg-[#222222] md:bg-black">
-      <!-- instead of just background black give it black blue linear gradient and make it look fantastic as well. -->
-      <!-- when done making the original design make yours and make this section as 100svh so it hits right on the face. -->
-      <h1 class="text-tittle text-center m-auto mb-10 xl:mb-24">
-        Have They Finally Made The <p>Perfect Workout Shoe?</p>
-      </h1>
-      <div class="sm:max-w-150 sm:mx-auto md:max-w-none md:m-0">
-        <div
-          class="flex justify-between gap-x-[max(2rem,9vw)] -mb-14 sm:-mb-14 md:-mb-[20%] lg:-mb-[28%] xl:mx-auto xl:max-w-[92%]">
-          <div class="w-[clamp(173px,56vw,323px)] ml-[4%] lg:ml-[2%]">
-            <h3 class="text-sub-tittle">THE HEEL</h3>
-            <p class="text-sentence md-text-sentence">
-              The heel is well-built, has appropriate elevation and is not too
-              rigid.
-            </p>
-            <img class="w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%] bxl:ml-[22%]" src="./resource/arrow-1.png"
-              aria-hidden="true" />
+    <main class="max-w-[1440px] m-auto">
+      <header
+        class="h-[clamp(536px,100svh,700px)] md:max-h-[560px] bmd:max-h-none md:flex" id="home"
+      >
+        <div class="h-2/5 md:w-1/2 md:h-auto relative flex items-center">
+          <div
+            class="bg-img-opacity-1/2 hero-section__bg-img-1 md:hidden"
+          ></div>
+          <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
+        </div>
+        <div class="h-3/5 relative md:w-1/2 md:h-auto md:flex md:items-center">
+          <div class="bg-img-opacity-1/2 hero-section__bg-img-2"></div>
+          <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
+          <img
+            class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:ml-auto sm:mr-[4%] md:m-0 md:translate-y-0 md:-translate-x-[24.5%] md:w-[max(70%,450px)] md:mt-24"
+            src="./resource/the-white-shoe-hero-image.png"
+            alt="The White Shoe From Website Main Section"
+          />
+        </div>
+      </header>
+      <section class="pt-8 pb-4 px-3 bg-[#222222] md:bg-black" id="howItWorks">
+        <!-- instead of just background black give it black blue linear gradient and make it look fantastic as well. -->
+        <!-- when done making the original design make yours and make this section as 100svh so it hits right on the face. -->
+        <h1 class="text-tittle text-center m-auto mb-10 xl:mb-24">
+          Have They Finally Made The
+          <p>Perfect Workout Shoe?</p>
+        </h1>
+        <div class="sm:max-w-150 sm:mx-auto md:max-w-none md:m-0">
+          <div
+            class="flex justify-between gap-x-[max(2rem,9vw)] -mb-14 sm:-mb-14 md:-mb-[20%] lg:-mb-[28%] xl:mx-auto xl:max-w-[92%]"
+          >
+            <div class="w-[clamp(173px,56vw,323px)] ml-[4%] lg:ml-[2%]">
+              <h3 class="text-sub-tittle">THE HEEL</h3>
+              <p class="text-sentence md-text-sentence">
+                The heel is well-built, has appropriate elevation and is not too
+                rigid.
+              </p>
+              <img
+                class="w-3/5 rotate-[50deg] mt-[4%] lg:rotate-0 lg:ml-[15%] bxl:ml-[22%]"
+                src="./resource/arrow-1.png"
+                aria-hidden="true"
+              />
+            </div>
+            <div class="w-[clamp(173px,56vw,323px)] mt-[10%] bxl:mr-[4%]">
+              <h3 class="text-sub-tittle">THE FRONT</h3>
+              <p class="text-sentence md-text-sentence">
+                The front is comfortable and adjusts well to the shape of your
+                foot.
+              </p>
+              <img
+                class="w-3/5 rotate-[126deg] mt-[4%] lg:mt-0 lg:-translate-x-[98%] lg:-translate-y-[104%] lg:-rotate-[26.2deg] xl:rotate-0"
+                src="./resource/arrow-2.png"
+                aria-hidden="true"
+              />
+            </div>
           </div>
-          <div class="w-[clamp(173px,56vw,323px)] mt-[10%] bxl:mr-[4%]">
-            <h3 class="text-sub-tittle">THE FRONT</h3>
-            <p class="text-sentence md-text-sentence">
-              The front is comfortable and adjusts well to the shape of your
-              foot.
-            </p>
+          <img
+            class="rotate-6 mx-auto w-[80%] md:max-w-500px lg:w-1/2 lg:rotate-0 bxl:w-200"
+            src="./resource/how-it-works-image.png"
+            alt="Shoe image explaining how it works"
+          />
+          <!-- make sure to put hover here later!! -->
+          <div
+            class="w-[clamp(173px,56vw,323px)] max-w-full -mt-[20%] ml-[10%] md:ml-[16%] lg:-mt-[10%] xl:-mt-[18%]"
+          >
             <img
-              class="w-3/5 rotate-[126deg] mt-[4%] lg:mt-0 lg:-translate-x-[98%] lg:-translate-y-[104%] lg:-rotate-[26.2deg] xl:rotate-0"
-              src="./resource/arrow-2.png" aria-hidden="true" />
+              class="w-1/2 ml-[30%] -mb-6 lg:w-[66%] lg:ml-[64%] lg:-mb-[35%]"
+              src="./resource/arrow-3.png"
+              aria-hidden="true"
+            />
+            <!-- see i could have tweaked the img alot to make it crystal perfect but what is the point, i don't think there are devices below 230px[anyway i will do a littl research on that as well.] -->
+            <h3 class="text-sub-tittle mb-1">TRACTION</h3>
+            <p class="text-sentence md-text-sentence">
+              The shoe has good traction and doesn't slip easily.
+            </p>
           </div>
         </div>
-        <img class="rotate-6 mx-auto w-[80%] md:max-w-500px lg:w-1/2 lg:rotate-0 bxl:w-200"
-          src="./resource/how-it-works-image.png" alt="Shoe image explaining how it works" />
-        <!-- make sure to put hover here later!! -->
-        <div class="w-[clamp(173px,56vw,323px)] max-w-full -mt-[20%] ml-[10%] md:ml-[16%] lg:-mt-[10%] xl:-mt-[18%]">
-          <img class="w-1/2 ml-[30%] -mb-6 lg:w-[66%] lg:ml-[64%] lg:-mb-[35%]" src="./resource/arrow-3.png"
-            aria-hidden="true" />
-          <!-- see i could have tweaked the img alot to make it crystal perfect but what is the point, i don't think there are devices below 230px[anyway i will do a littl research on that as well.] -->
-          <h3 class="text-sub-tittle mb-1">TRACTION</h3>
-          <p class="text-sentence md-text-sentence">
-            The shoe has good traction and doesn't slip easily.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="px-3 py-8 bg-[#222222] md:bg-black md:mx-auto blg:flex blg:justify-between blg:max-w-[92%]">
-      <h1 class="text-tittle text-center mb-10 blg:hidden xl:mb-24">
-        About Us!
-      </h1>
-      <div class="relative z-10 md:max-w-[560px] md:mx-auto blg:max-w-[60%]">
-        <div
-          class="bg-cover bg-[url(./resource/about-us-background.png)] h-4/5 absolute inset-0 -z-10 rounded-b-[4px] opacity-80 blg:w-[70%] blg:left-[15%]">
-        </div>
-        <img src="./resource/about-us-shoe-company.png" alt="Male Model Wearing The Shoe Made By The Shoe Company"
-          class="" />
-      </div>
-      <div class="md:max-w-[740px] md:mx-auto blg:w-auto blg:max-w-[40%] blg:mb-0 bxl:mt-10">
-        <h1 class="hidden blg:text-tittle blg:mb-8 blg:block">
+      </section>
+      <section
+        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black md:mx-auto blg:flex blg:justify-between blg:max-w-[92%]" id="aboutUs"
+      >
+        <h1 class="text-tittle text-center mb-10 blg:hidden xl:mb-24">
           About Us!
         </h1>
-        <p class="text-sentence-paragraph mb-[6%]">
-          For each one of those shoe sweethearts out there,
-          <b>THE SHOE COMPANY</b>
-          offer the one-stop goal to pick the correct match of footwear.
-        </p>
+        <div class="relative z-10 md:max-w-[560px] md:mx-auto blg:max-w-[60%]">
+          <div
+            class="bg-cover bg-[url(./resource/about-us-background.png)] h-4/5 absolute inset-0 -z-10 rounded-b-[4px] opacity-80 blg:w-[70%] blg:left-[15%]"
+          ></div>
+          <img
+            src="./resource/about-us-shoe-company.png"
+            alt="Male Model Wearing The Shoe Made By The Shoe Company"
+            class=""
+          />
+        </div>
+        <div
+          class="md:max-w-[740px] md:mx-auto blg:w-auto blg:max-w-[40%] blg:mb-0 bxl:mt-10"
+        >
+          <h1 class="hidden blg:text-tittle blg:mb-8 blg:block">About Us!</h1>
+          <p class="text-sentence-paragraph mb-[6%]">
+            For each one of those shoe sweethearts out there,
+            <b>THE SHOE COMPANY</b>
+            offer the one-stop goal to pick the correct match of footwear.
+          </p>
 
-        <p class="text-sentence-paragraph mb-[6%]">
-          Gone are the days when you needed to go from store to store to
-          locate the correct style and size for yourself.
-        </p>
-        <p class="text-sentence-paragraph mb-[6%]">
-          At <b>THE SHOE COMPANY</b>, you can locate a vast accumulation of
-          dashing footwear in all sizes and styles, all inside a couple of
-          snaps.
-        </p>
+          <p class="text-sentence-paragraph mb-[6%]">
+            Gone are the days when you needed to go from store to store to
+            locate the correct style and size for yourself.
+          </p>
+          <p class="text-sentence-paragraph mb-[6%]">
+            At <b>THE SHOE COMPANY</b>, you can locate a vast accumulation of
+            dashing footwear in all sizes and styles, all inside a couple of
+            snaps.
+          </p>
 
-        <p class="text-sentence-paragraph">
-          Simple right? Not just we are here to spare your time, we are
-          putting forth you the most dazzling footwear alternatives from all
-          the first-rate brands like <b>DAVINCHI</b>, <b>PRINCESS</b>, and
-          <b>SIGNATURE</b>. At <i>‘Organization Name’</i>, we offer men,
-          ladies, and child’s shoes perfect for any and each event.
-        </p>
-      </div>
-    </section>
+          <p class="text-sentence-paragraph">
+            Simple right? Not just we are here to spare your time, we are
+            putting forth you the most dazzling footwear alternatives from all
+            the first-rate brands like <b>DAVINCHI</b>, <b>PRINCESS</b>, and
+            <b>SIGNATURE</b>. At <i>‘Organization Name’</i>, we offer men,
+            ladies, and child’s shoes perfect for any and each event.
+          </p>
+        </div>
+      </section>
 
-    <section class="px-3 py-8 bg-[#222222] md:bg-black text-center xl:max-w-[92%] xl:mx-auto ">
-      <h1 class="text-tittle mb-10 xl:mb-24">
-        What People are saying about <p>THE SHOE COMPANY ?</p></h1>
-      <div class="lg:flex lg:gap-x-[5%]">
-        <div class="sm:flex lg:w-[65%] lg:gap-x-[5%]">
-          <div class="mb-10 sm:w-1/2">
-            <div class="bg-[url(./resource/testimonial-people-image-1.jpg)] bg-cover bg-top p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
-              aria-label="Image Of Person First From Testimonial Section"></div>
+      <section
+        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black text-center xl:max-w-[92%] xl:mx-auto" id="testimonials"
+      >
+        <h1 class="text-tittle mb-10 xl:mb-24">
+          What People are saying about
+          <p>THE SHOE COMPANY ?</p>
+        </h1>
+        <div
+          class="md:grid md:grid-cols-2 md:gap-y-12 lg:grid-cols-3 lg:gap-y-0"
+        >
+          <div class="mb-10 max-w-[434px] mx-auto md:max-w-none md:mx-[unset]">
+            <div
+              class="bg-[url(./resource/testimonial-people-image-1.jpg)] bg-cover bg-top p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
+              aria-label="Image Of Person First From Testimonial Section"
+            ></div>
             <!-- <img class="rounded-full overflow-hidden border-2 " src="" alt="" srcset=""> -->
-            <blockquote class="text-sentence-paragraph"><i>
-              “Looking for shoes that are built just for you? THE SHOE COMPANY is
-                the way to go. Love the <b>design</b> and <b>build quality.</b>”
-            </i></blockquote>
+            <blockquote class="text-sentence-paragraph">
+              <i>
+                <b>“</b>Looking for shoes that are built just for you? THE SHOE
+                COMPANY is the way to go. Love the <b>design</b> and
+                <b>build quality.”</b>
+              </i>
+            </blockquote>
           </div>
-          <div class="mb-10 sm:w-1/2">
-            <div class="bg-[url(./resource/testimonial-people-image-2.jpg)] bg-cover p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
-              aria-label="Image Of Person Second From Testimonial Section"></div>
-            <blockquote class="text-sentence-paragraph"><i>
-              “I love the shoes, the <b>quality</b>, and everyting. They are worth the
-                <b>investment!</b>”
-            </i></blockquote>
+          <div class="mb-10 max-w-[434px] mx-auto md:max-w-none md:mx-[unset] ">
+            <div
+              class="bg-[url(./resource/testimonial-people-image-2.jpg)] bg-cover p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
+              aria-label="Image Of Person Second From Testimonial Section"
+            ></div>
+            <blockquote class="text-sentence-paragraph">
+              <i>
+                <b>“</b>I love the shoes, the <b>quality</b>, and everyting.
+                They are worth the
+                <b>investment!”</b>
+              </i>
+            </blockquote>
           </div>
-        </div>
-        <div class="mb-10 sm:w-1/2 sm:mx-auto lg:w-[30%]">
-          <div class="bg-[url(./resource/testimonial-people-image-3.jpg)] bg-size-[196%] bg-bottom p-[31%] rounded-full w-0 mx-auto mb-5 border-2  vsm:max-w-3xs"
-            aria-label="Image Of Person Third From Testimonial Section"></div>
-          <blockquote class="text-sentence-paragraph"><i>
-            “They make the best and forever lasting shoes. <b>Superb fit</b> and
-              <b>comfort</b> is literally the next level. <b>Much recommended!</b>”
-          </i></blockquote>
-        </div>
-      </div>
-    </section>
-</body>
 
+          <div
+            class="mb-10 max-w-[434px] mx-auto md:max-w-none md:w-1/2 md:mx-auto md:col-span-2 lg:mx-[unset] lg:w-auto lg:col-span-1 "
+          >
+            <div
+              class="bg-[url(./resource/testimonial-people-image-3.jpg)] bg-size-[196%] bg-bottom p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
+              aria-label="Image Of Person Third From Testimonial Section"
+            ></div>
+            <blockquote class="text-sentence-paragraph">
+              <i>
+                <b>“</b>They make the best and forever lasting shoes.
+                <b>Superb fit</b> and <b>comfort</b> is literally the next
+                level. <b>Much recommended!”</b>
+              </i>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="pt-10 pb-2 relative bg-[#222222] md:bg-black xl:max-w-[1440px] xl:mx-auto" id="contactUs"
+    >
+      <div class="w-[92%] mx-auto lg:flex lg:justify-between">
+        <div class="">
+          <h1 class="text-tittle mb-8">CONTACT US</h1>
+          <h2 class="text-sentence font-normal mb-7">
+            THE SHOE COMPANY,
+            <p>Dallas, Texas, USA</p>
+            <a href="tel:+1559011209910"
+              ><b><u>+1 5590 1120 9910</u></b></a
+            >
+          </h2>
+          <div class="w-fit flex justify-between items-center gap-x-4">
+            <a href=""
+              ><img
+                src="./resource/Facebook.svg"
+                alt="The Shoe Company Facebook Page Link" /></a
+            ><a href=""
+              ><img
+                src="./resource/Twitch.svg"
+                alt="The Shoe Company Twitch Account Link" /></a
+            ><a href=""
+              ><img
+                src="./resource/instagram.svg"
+                alt="The Shoe Company Instagram Account Link" /></a
+            ><a href=""
+              ><img
+                src="./resource/Youtube.svg"
+                alt="The Shoe Company Youtube Account Link"
+            /></a>
+          </div>
+        </div>
+        <iframe
+          class="rounded-[0.5rem] mt-5 w-full h-[55svh] vsm:max-w-[670px] vsm:h-[65svh] md:max-h-[420px] lg:max-h-[809px] lg:max-w-[676px] lg:w-[60%] lg:h-[85svh] lg:mt-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.60090726364!2d-96.87198002011303!3d32.82058616531825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1679084925294!5m2!1sen!2sin"
+          frameborder="0"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <h3 class="text-sentence-paragraph text-center mt-5 lg:mt-10">
+        Made With <span class="bg-white rounded-[2px] p-1">❤</span> by
+        <a
+          href="https://github.com/DevenderSinghMehra"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><b>Devender Singh</b></a
+        >
+      </h3>
+    </footer>
+  </body>
 </html>

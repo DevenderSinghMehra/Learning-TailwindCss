@@ -1,2 +1,3 @@
 1. make nav bar stylish later, make the background like glass, and make the nav bar in to pill when scroll down and fixed it with animation on top of the screen.
 put #b0b0b0 ths color as text selection text bg. 
+before closing the project make sure, convert all the px to rem for tailwind mechanism and browser accessibility.
