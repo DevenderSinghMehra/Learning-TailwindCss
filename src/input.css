@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 /* i don't need to add source('./src')//because in vite.config.js i have already stated src as the root folder, and it also se the same root folder for tailwind.*/
 
@@ -8,6 +9,7 @@
 } */
 
 @theme {
+  --font-poppins: poppins, "Segoe UI", "Noto Color Emoji", sans-serif;
   --breakpoint-vsm: 36.25rem;
   --breakpoint-bmd: 51.5rem;
   --breakpoint-blg: 72.625rem;
@@ -54,15 +56,15 @@
   .hero-section__bg-img-1 {
     @apply bg-[url(./resource/background-image-1-hero-section.png)];
   }
-  
+
   .hero-section__bg-img-1__title {
     @apply text-[max(32px,6vw)]/[max(1.9rem,6vw)] sm:text-[min(7vw,96px)]/[min(7vw,6rem)] font-bold max-w-0 ml-[15%] sm:mt-[15%];
   }
-  
+
   .hero-section__bg-img-2 {
     @apply bg-[url(./resource/background-image-2-hero-section.png)];
   }
- /*  .about-section__bg-img {
+  /*  .about-section__bg-img {
     @apply ];
   } */
 }

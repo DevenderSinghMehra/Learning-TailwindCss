@@ -8,7 +8,7 @@
   </head>
 
   <body class="bg-black text-white">
-    <header class="absolute top-0 left-0 right-0 z-50" >
+    <header class="absolute top-0 left-0 right-0 z-50">
       <div class="relative flex justify-between p-4 max-w-[1440px] m-auto">
         <a class="shrink-0" href="./index.html"
           ><img
@@ -48,16 +48,17 @@
     </header>
     <main class="max-w-[1440px] m-auto">
       <header
-        class="h-[clamp(536px,100svh,700px)] md:max-h-[560px] bmd:max-h-none md:flex" id="home"
+        class="h-[clamp(536px,100svh,700px)] md:max-h-[560px] bmd:max-h-none md:flex"
+        id="home"
       >
         <div class="h-2/5 md:w-1/2 md:h-auto relative flex items-center">
           <div
-            class="bg-img-opacity-1/2 hero-section__bg-img-1 md:hidden"
+            class="bg-img-opacity-half hero-section__bg-img-1 md:hidden"
           ></div>
           <h1 class="hero-section__bg-img-1__title">THE SHOE COMPANY</h1>
         </div>
         <div class="h-3/5 relative md:w-1/2 md:h-auto md:flex md:items-center">
-          <div class="bg-img-opacity-1/2 hero-section__bg-img-2"></div>
+          <div class="bg-img-opacity-half hero-section__bg-img-2"></div>
           <!-- see the reason i have used div to place background image is to maintain readability while not trading it for accessibility, as from image tag and pseudo element it was also possible but they were not right fit like div. -->
           <img
             class="w-[min(80%,350px)] mx-auto -translate-y-[40%] sm:ml-auto sm:mr-[4%] md:m-0 md:translate-y-0 md:-translate-x-[24.5%] md:w-[max(70%,450px)] md:mt-24"
@@ -125,7 +126,8 @@
         </div>
       </section>
       <section
-        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black md:mx-auto blg:flex blg:justify-between blg:max-w-[92%]" id="aboutUs"
+        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black md:mx-auto blg:flex blg:justify-between blg:max-w-[92%]"
+        id="aboutUs"
       >
         <h1 class="text-tittle text-center mb-10 blg:hidden xl:mb-24">
           About Us!
@@ -171,7 +173,8 @@
       </section>
 
       <section
-        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black text-center xl:max-w-[92%] xl:mx-auto" id="testimonials"
+        class="px-3 pt-8 pb-4 bg-[#222222] md:bg-black text-center xl:max-w-[92%] xl:mx-auto"
+        id="testimonials"
       >
         <h1 class="text-tittle mb-10 xl:mb-24">
           What People are saying about
@@ -194,7 +197,7 @@
               </i>
             </blockquote>
           </div>
-          <div class="mb-10 max-w-[434px] mx-auto md:max-w-none md:mx-[unset] ">
+          <div class="mb-10 max-w-[434px] mx-auto md:max-w-none md:mx-[unset]">
             <div
               class="bg-[url(./resource/testimonial-people-image-2.jpg)] bg-cover p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
               aria-label="Image Of Person Second From Testimonial Section"
@@ -209,7 +212,7 @@
           </div>
 
           <div
-            class="mb-10 max-w-[434px] mx-auto md:max-w-none md:w-1/2 md:mx-auto md:col-span-2 lg:mx-[unset] lg:w-auto lg:col-span-1 "
+            class="mb-10 max-w-[434px] mx-auto md:max-w-none md:w-1/2 md:mx-auto md:col-span-2 lg:mx-[unset] lg:w-auto lg:col-span-1"
           >
             <div
               class="bg-[url(./resource/testimonial-people-image-3.jpg)] bg-size-[196%] bg-bottom p-[31%] rounded-full w-0 mx-auto mb-5 border-2 vsm:max-w-3xs"
@@ -228,7 +231,8 @@
     </main>
 
     <footer
-      class="pt-10 pb-2 relative bg-[#222222] md:bg-black xl:max-w-[1440px] xl:mx-auto" id="contactUs"
+      class="pt-10 pb-2 relative bg-[#222222] md:bg-black xl:max-w-[1440px] xl:mx-auto"
+      id="contactUs"
     >
       <div class="w-[92%] mx-auto lg:flex lg:justify-between">
         <div class="">
@@ -240,7 +244,9 @@
               ><b><u>+1 5590 1120 9910</u></b></a
             >
           </h2>
-          <div class="w-fit flex justify-between items-center gap-x-4">
+          <div
+            class="w-fit flex justify-between items-center gap-x-2 [&>a]:p-2 md:[&>a]:hover:bg-amber-700 md:[&>a]:hover:-translate-y-1.5 md:[&>a]:rounded-[0.5rem] md:[&>a]:transition-all"
+          >
             <a href=""
               ><img
                 src="./resource/Facebook.svg"
@@ -261,15 +267,14 @@
           </div>
         </div>
         <iframe
-          class="rounded-[0.5rem] mt-5 w-full h-[55svh] vsm:max-w-[670px] vsm:h-[65svh] md:max-h-[420px] lg:max-h-[809px] lg:max-w-[676px] lg:w-[60%] lg:h-[85svh] lg:mt-0"
+          class="rounded-[0.5rem] mt-5 w-full h-[55svh] vsm:max-w-[670px] vsm:h-[65svh] md:max-h-[420px] md:transition-all md:hover:outline-4 lg:max-h-[809px] lg:max-w-[676px] lg:w-[60%] lg:h-[85svh] lg:mt-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214587.60090726364!2d-96.87198002011303!3d32.82058616531825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1679084925294!5m2!1sen!2sin"
           frameborder="0"
           loading="lazy"
         ></iframe>
       </div>
       <h3 class="text-sentence-paragraph text-center mt-5 lg:mt-10">
-        Made With <span class="bg-white rounded-[2px] p-1">❤</span> by
-        <a
+        Made With <span class="p-0.5 mx-0.75 bg-white rounded-[0.25rem]">&#x2764;&#xFE0F;</span> by <a
           href="https://github.com/DevenderSinghMehra"
           target="_blank"
           rel="noopener noreferrer"
